@@ -1,16 +1,23 @@
-*{
-    background-color: grey;
+* {
+  background-color: grey;
 }
-header{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+header {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
 }
-h1{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
-.form{
-    text-align: center;
+.form {
+  text-align: center;
+}
+.imagelist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.imagelist img {
+  width: 100%;
 }
