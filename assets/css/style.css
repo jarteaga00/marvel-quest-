@@ -14,4 +14,8 @@ h1{
 .form{
     text-align: center;
 }
-
+/*thor pic .can give the same name "hero" Cahnge later when adding more heros hero can be define for all 6*/
+#thor_image{
+    width: 50%;
+    height: 300px;
+}
