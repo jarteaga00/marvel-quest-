@@ -5,7 +5,7 @@ let thor_image=document.getElementById('thor_image')
 let thor_bio=document.getElementById('thor_bio')
 let comic_image=document.getElementById('comic_image')
 
-fetch('https://gateway.marvel.com/v1/public/characters?name=Thor&ts=HelloWorld123&apikey=58cf9dccb6a433565258dd4185258cc5&hash=6a3f4d8c242a80ba92ccd1d638bc7c4f')
+fetch('https://gateway.marvel.com/v1/public/characters?name=Thorgit c')
 .then(function (response) {
    return response.json();
 })
