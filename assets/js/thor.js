@@ -1,3 +1,4 @@
+
 let bio=document.getElementById('bio')
 let comics=document.getElementById('comics')
 let movies=document.getElementById('movies')
@@ -11,11 +12,12 @@ fetch('https://gateway.marvel.com/v1/public/characters?name=Thorgit c')
 })
 .then(
   function (data){
+
     //start of thumbnail//
-   console.log(data.data.results[0].thumbnail.path+'.jpg');
-   let thumbnail=data.data.results[0].thumbnail.path+'.jpg';
-   thor_image.src=thumbnail
-   //end of thumbnail//
+    console.log(data.data.results[0].thumbnail.path + ".jpg");
+    let thumbnail = data.data.results[0].thumbnail.path + ".jpg";
+    thor_image.src = thumbnail;
+    //end of thumbnail//
 
    //start of bio//
    console.log(data.data.results[0].description);
@@ -41,4 +43,4 @@ fetch('https://gateway.marvel.com/v1/public/comics/30039/characters?&ts=HelloWor
    //  .then(function (response) {
    //  return response.json();
    // })
-   
+  
