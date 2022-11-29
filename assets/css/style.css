@@ -1,0 +1,28 @@
+* {
+  background-color: grey;
+}
+header {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.form {
+  text-align: center;
+}
+.imagelist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.imagelist img {
+  width: 100%;
+}
+/*thor pic .can give the same name "hero" Cahnge later when adding more heros hero can be define for all 6*/
+#thor_image{
+    width: 50%;
+    height: 300px;
+}
