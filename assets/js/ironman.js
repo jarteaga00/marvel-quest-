@@ -3,7 +3,8 @@ let comics=document.getElementById('comics')
 let movies=document.getElementById('movies')
 let ironman_image=document.getElementById('ironman_image')
 let ironman_bio=document.getElementById('ironman_bio')
-
+let comic_image=document.getElementById('comic_image')
+let comic_title=document.getElementById('comic_title')
 fetch('https://gateway.marvel.com/v1/public/characters?name=Iron%20Man&ts=HelloWorld123&apikey=58cf9dccb6a433565258dd4185258cc5&hash=6a3f4d8c242a80ba92ccd1d638bc7c4f')
 .then(function (response) {
    return response.json();
@@ -28,13 +29,14 @@ fetch('https://gateway.marvel.com/v1/public/characters?name=Iron%20Man&ts=HelloW
 
 
    fetch('https://gateway.marvel.com/v1/public/comics/30090?ts=HelloWorld123&apikey=58cf9dccb6a433565258dd4185258cc5&hash=6a3f4d8c242a80ba92ccd1d638bc7c4f')
-    .then(function (response) {
-    return response.json();
-    })
-    .then(
-        function (data){
-        console.log(data.data.items[0])
-        let comic
-    })
+  .then(response => response.json())
+  .then(response => {
+   // comic_title.textContent = response.data
+   // comic_image.src
+   comic_image.innerHTML=`<img src=${response.data.results[0].images[0].path}.${response.data.results[0].images[0].extension}>`
+   console.log(response.data)
+  } )
+  .catch(err => console.error(err));
+
    }
 );

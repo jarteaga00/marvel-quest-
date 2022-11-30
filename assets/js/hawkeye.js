@@ -3,7 +3,7 @@ let comics=document.getElementById('comics')
 let movies=document.getElementById('movies')
 let hawkeye_image=document.getElementById('hawkeye_image')
 let hawkeye_bio=document.getElementById('hawkeye_bio')
-
+hawk
 fetch('https://gateway.marvel.com/v1/public/characters?name=hawkeye&ts=HelloWorld123&apikey=58cf9dccb6a433565258dd4185258cc5&hash=6a3f4d8c242a80ba92ccd1d638bc7c4f')
 .then(function (response) {
    return response.json();
