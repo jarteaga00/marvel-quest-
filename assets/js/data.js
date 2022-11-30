@@ -1,5 +1,5 @@
 // Marvel Info
-let comiclist = document.getElementById("comiclist");
+//let comiclist = document.getElementById("comiclist");
 
 //outer container
 const con = document.createElement('div');
@@ -33,6 +33,7 @@ fetch(
       console.log('hero.name',hero.name)
       console.log('hero.thumbnail',hero.thumbnail.path)
       console.log('hero.extention',hero.thumbnail.extension)
+      
       
       //link
       const link = document.createElement('a');
