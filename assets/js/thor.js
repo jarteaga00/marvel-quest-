@@ -6,7 +6,7 @@ let thor_image=document.getElementById('thor_image')
 let thor_bio=document.getElementById('thor_bio')
 let comic_image=document.getElementById('comic_image')
 
-fetch('https://gateway.marvel.com/v1/public/characters?name=Thorgit c')
+fetch('https://gateway.marvel.com/v1/public/characters?name=Thor&ts=HelloWorld123&apikey=58cf9dccb6a433565258dd4185258cc5&hash=6a3f4d8c242a80ba92ccd1d638bc7c4f')
 .then(function (response) {
    return response.json();
 })
@@ -33,10 +33,10 @@ fetch('https://gateway.marvel.com/v1/public/comics/30039/characters?&ts=HelloWor
 .then(
    function(data){  
    console.log(data.data.results[0]);
-   // let thumbnail=data.data.results[0].thumbnail.path+'.jpg';
-  let thor_image1=data.data.results[0].comics.items[0].resourceURI;
+   let thumbnail=data.data.results[0].thumbnail.path+'.jpg';
+   let thor_image1=data.data.results[0].comics.items[1].resourceURI;
   console.log(thor_image1)
-   // comic_image.src=thumbnail
+   comic_image.src=thumbnail
 })
    // console.log(data.data.results[0].comics.items);
    // let comic=data.data.results[0].comics.items;
